@@ -127,6 +127,8 @@ func main() {
 		dictpath := args[0]
 		if strings.Contains(dictpath, "FIX50SP1") {
 			args = append(args, strings.Replace(dictpath, "FIX50SP1", "FIXT11", -1))
+		} else if strings.Contains(dictpath, "FIX50SP2artex") {
+			args = append(args, strings.Replace(dictpath, "FIX50SP2artex", "FIXT11", -1))
 		} else if strings.Contains(dictpath, "FIX50SP2") {
 			args = append(args, strings.Replace(dictpath, "FIX50SP2", "FIXT11", -1))
 		} else if strings.Contains(dictpath, "FIX50") {
